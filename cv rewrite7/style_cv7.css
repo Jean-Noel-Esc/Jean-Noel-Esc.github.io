@@ -1,0 +1,50 @@
+.light { color:black; font-style: normal;}
+
+.orangeSou { border-bottom: solid; border-color: orange;}
+
+.cvtitle { border-bottom: solid; border-color: orange;}
+
+.fa-dot-circle {color: orange; font-size:12px;}
+
+.fa-graduation-cap,.fa-briefcase,.fa-pen,.fa-circle {color: orange;}
+
+.fa-circle {color:#454545}
+
+.icon-background{color:#FEF329;}
+
+
+
+
+ul {
+  list-style-type:none;
+}
+ul li:before {
+  content: "\2022";
+  color: orange;
+  vertical-align: center;
+  margin-right: 7px;
+  font-size:20px;
+    }
+li {
+  text-align:left;
+}
+
+
+h1 {font-size: 50px; color: orange;}
+h2 {font-size: 25px;}
+h4 {font-size: 16px}
+
+.p {text-align:justify-content;}
+
+.article {margin-left: 350px; margin-top: 40px; text-align: justify;}
+
+.cvlist {
+  float: left;
+}
+.cvlist {
+  margin-top: 5px;
+}
+
+
+
+.tour {border:solid 0.25rem #99999988 ;}
