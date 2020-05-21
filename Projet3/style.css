@@ -1,0 +1,590 @@
+@font-face{ font-family:"Gotu"; 
+
+src : url("Gotu-regular.ttf")
+}
+@font-face{ font-family:"Devonshire"; 
+
+src : url("Devonshire-regular.ttf")
+}
+@font-face{ font-family:"Comic"; 
+
+src : url("ComicNeue-regular.ttf")
+}
+@font-face{ font-family:"Parisienne"; 
+
+src : url("Parisienne-regular.ttf")
+}
+@font-face{ font-family:"Kaushan"; 
+
+src : url("KaushanScript-regular.ttf")
+}
+
+@font-face{ font-family:"Croissant"; 
+
+src : url("CroissantOne-regular.ttf")
+}
+@font-face{ font-family:"Kalam"; 
+
+src : url("Kalam-regular.ttf")
+}
+@font-face{ font-family:"Patrick"; 
+
+src : url("PatrickHand-regular.ttf")
+}
+@font-face{ font-family:"Taviraj"; 
+
+src : url("Taviraj-regular.ttf")
+}
+/*PAGE ACCEUIL*/
+body{ 
+    margin: 0;
+    height: 100%;
+}
+
+header, footer {
+	display: block;
+    font-family: Helvetica;
+    background-color: #579c87;
+    color: orange;
+    text-align: center;
+    width: 100%;
+    padding: 2% 0 2% 0;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+footer p a  {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: orange;
+    display: inline-block; 
+}
+ footer p a:hover {   
+    animation-name: wiggle; 
+    animation-duration : 2s ;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes wiggle {   
+
+0% {
+    transform: rotate(0deg);
+}
+25% {
+    transform: rotate(4deg);
+}
+50% {
+    transform: rotate(-4deg);
+}
+100% {
+    transform: rotate(0deg);  }
+} 
+.contenu h2, h3{
+    margin-top: 50%;
+    justify-content: center;
+}
+a .contenu h2
+{
+    font-size: 24px;
+    transition: all 0.5s;    
+}
+a .contenu h3
+{
+    font-size: 18px;
+    transition: all 0.5s;    
+}
+a:hover .contenu 
+ {
+    opacity: 0.55;
+    transition: all 0.5s;    
+}
+a:hover .contenu h2
+ {
+    font-size: 30px;
+    transition: all 0.5s;    
+}
+a:hover .contenu h3
+ {
+    font-size: 24px;
+    transition: all 0.5s;    
+}
+#menus {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    margin: auto;
+}
+#menus section{
+    width: 300px;
+    height: 450px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 8%;
+    -webkit-box-shadow: 0px 0px 8px 6px #e8e8e8;
+    -moz-box-shadow: 0px 0px 8px 6px #e8e8e8;
+    box-shadow: 0px 0px 8px 6px #e8e8e8;
+    margin-top: 30px; 
+    margin-bottom:30px;
+    margin-left:10px;
+    margin-right:10px ; 
+}
+.contenu {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    transition: all 0.5s; 
+}
+img {
+    width: 50px;
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+#menu1 h2 {
+    font-family: "devonshire";
+    text-align: center;
+    color: black;
+    margin-top: 0px;
+    letter-spacing: 1px;
+
+}
+#menu1 .contenu {
+    font-family: "devonshire";
+    font-size: 24px;
+    text-align: center;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: auto;
+}
+#menu1 .contenu h3{
+	font-family: "Patrick";
+	color: black;
+	font-size: larger;
+	letter-spacing: 3px;
+	font-style: italic;
+}
+#menu2 .contenu {
+    font-family: "Croissant";
+    color: transparent;
+    letter-spacing: -0.5px;
+    background-image: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
+    background-color: #fff5fe;
+   -webkit-background-clip: text;
+}
+#menu2 .contenu h3{
+	font-family: "Taviraj";
+	color: #c77529;
+	font-size: xx-large;
+	letter-spacing: 3px;
+}
+#menu3 .contenu{    
+    font-family: "Parisienne";
+    font-size: 24px;
+    color: #0431df;
+    background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
+    background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #fdfefd;
+}
+#menu3 .contenu h3{
+	font-family: "Kalam";
+	font-size: larger;
+	letter-spacing: 2px;
+}
+#menu4 .contenu{
+    font-family: "Kaushan";
+    font-size: 24px;
+    color: #3d9339;
+    background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
+    background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #fdfffd;
+}
+#menu4 .contenu h3{
+	font-family: "Kalam";
+	font-size: larger;
+	letter-spacing: 1px;
+}
+/*bouton prochainement et animation*/
+button {
+    border-radius: 5px 5px 5px 5px;
+    border: 0.5px solid #508e7c;
+    padding: 0.5% 3% 0.5% 3%;
+    color: #fdcb46;
+    background-color: #579c87;
+    margin-bottom: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;    
+}
+.prochainement { 
+    text-align: center;
+    display:inline-block;
+    justify-content: center;
+}
+#prochainement{
+    width: 100%;
+    margin: auto;
+}
+span#span1 {
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: apparition;
+}
+span#span2 {
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: apparition;
+}
+span#span3 {
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: apparition;
+}
+@keyframes apparition {
+0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+} 
+}
+/**/
+/*nom restaurant sur tous les menus en tete*/
+a {
+    font-family: Helvetica;
+    color: orange;
+    text-decoration-line: none;
+}
+.menu__titre {
+    font-size: 25px;
+    font-family: helvetica;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Css COMMUN A TOUS LES MENUS*/
+section {
+    justify-content: center;
+    height: 100%;
+    margin: auto;
+    margin-bottom: 30%;
+}
+section.menu{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding : 10%;
+    box-shadow: 0px 0px 8px 6px #e8e8e8;
+}
+h3 {
+	font-size: 16px; 
+	margin-top: 0;
+	margin-bottom: 0;
+	width:100%; } 
+.plats {
+    font-size: 12px;
+    flex-direction: row;
+    line-height: 1;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.prix {  
+	font-size: 14px;
+    margin-left: auto; 
+    text-align: right;
+    align-items: baseline;
+}
+.menu .assiette {
+    display:flex;
+    font-size: 14px;
+    flex-direction: row;
+    line-height: 2;
+    align-items: baseline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.assiette-la-palette-du-gout {
+    font-family: "Kalam";
+}
+#menus h2 {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+.soustitre { 
+    text-align: center;
+    display:flex;
+    width: 100%;
+}
+h3 { 
+margin-top: 0;
+margin-bottom: 0;
+width:100%; 
+} 
+.menu h3:hover {
+	background-image: linear-gradient(to right , black 0%, black 100%);
+}
+.soustitre h3 {
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 0px 1px;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    transition: all 0.5s;
+}
+.soustitre h3:hover {
+    background-position-x: left;
+    background-position-y: bottom;
+    background-size: 100% 1px;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    transition: all 0.5s;
+}
+
+/*ELEMENT SPECIFIQUE A CHAQUE MENU*/
+/*MENU1*/
+#menu1 section.menu, #menus #menu1{
+    background-color: #fcdbd6;
+}
+#menu1 .soustitre{
+	font-family: "Kalam";
+}
+.nom_restaurant-titre-la-note-enchantee {
+    font-family: "devonshire";
+    margin-top: 5px;
+    font-size: 25px;
+    margin-block-end: 0;
+    text-align: center;
+}
+.img-en-tete {
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+.img-pied-de-page {
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+    display: block;
+}
+#pieddepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Devonshire;
+}
+.trait1 { 
+	width:25%;
+	background-color: black;
+	height: 4px;
+	border: none; 
+}
+#menu1 .assiette-la-note-enchantee {
+	font-family: "Kalam";
+}
+
+
+/*MENU2*/
+#menu2 section.menu,  #menus #menu2 {
+    background-color: #fce9fa;
+}
+.nom_restaurant-titre-le-chic-a-la-francaise {  
+	display: block;
+    font-family: "Croissant";
+    font-size: 25px;
+    color: #c77529;
+    letter-spacing: -0.5px;
+    background: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center; 
+}
+#menu2 .menu h3.h3-le-chic-a-la-francaise-1:hover {
+    background-image: linear-gradient(to right , #dc5400 0%, #dc5400 100%);
+}
+#menu2 .menu h3.h3-le-chic-a-la-francaise-2:hover {
+    background-image: linear-gradient(to right , #af80c0 0%, #af80c0 100%);
+}
+#menu2 .menu h3.h3-le-chic-a-la-francaise-3:hover {
+    background-image: linear-gradient(to right , #4c2e7e 0%, #4c2e7e 100%);
+}
+#entrees-le-chic {
+    color: #dc5400 !important;
+}
+#plats-le-chic{
+    color: #af80c0 !important;
+}
+#desserts-le-chic{
+    color: #4c2e7e;
+}
+.trait2-1 { 
+	width:45%;
+	background-color: #dc5400;
+	height: 4px;
+	border: none; 
+}
+.trait2-2 { 
+	width:45%;
+	background-color: #af80c0;
+	height: 4px;
+	border: none; 
+}
+.trait2-3 { 
+	width:45%;
+	background-color: #4c2e7e;
+	height: 4px;
+	border: none; 
+}
+/*MENU3*/
+#menu3 section.menu,  #menus #menu3{
+    background-color: #c7c7c7;
+}
+#menu3 .soustitre{
+	font-family: "Kalam";
+}
+.nom_restaurant-titre-le-delice-des-papilles {
+    font-family: "Parisienne";
+    font-size: 25px;
+    color: #0431df;
+    background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
+    background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+#menu3 .menu h3.h3-le-delice-des-papilles-1:hover {
+    background-image: linear-gradient(to right , #001572 0%, #001572 100%);
+}
+#menu3 .menu h3.h3-le-delice-des-papilles-2:hover {
+    background-image: linear-gradient(to right , #3349ab 0%, #3349ab 100%);
+}
+#menu3 .menu h3.h3-le-delice-des-papilles-3:hover {
+    background-image: linear-gradient(to right , #7f92e7 0%, #7f92e7 100%);
+}
+.trait3-1 { 
+	width: 55%;
+	background-color: #001572;
+	height: 4px;
+	border: none; 
+}
+.trait3-2 { 
+	width: 55%;
+	background-color: #3349ab;
+	height: 4px;
+	border: none; 
+}
+.trait3-3 { 
+	width: 55%;
+	background-color: #7f92e7;
+	height: 4px;
+	border: none; 
+}
+.assiette-le-delice-des-papilles {
+	font-family: "kalam";
+}
+/*MENU4*/
+#menu4 section.menu,  #menus #menu4{
+    background-color: #f6f5f5;
+}
+.nom_restaurant-titre-la-palette-du-gout {
+    font-family: "Kaushan";
+    font-size: 25px;
+    color: #3d9339;
+    background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
+    background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.assiette-la-palette-du-gout {
+    font-family: "Kalam";
+}
+.trait4 {
+    width: 65%;
+    background-color: green;
+    height: 4px;
+    border: none;
+}
+.trait4-1 {
+    background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+}
+
+.trait4-2 {
+    background: linear-gradient(to left, #3d9339 0%, #c0fd87 100%);
+}
+#menu4 .soustitre {
+    font-family: "Kalam";
+}
+
+/*responsive*/
+
+@media (min-width: 768px) {
+	.bloc-1 { 
+		display: inline-flex; }
+	.bloc-2 { 
+		display: inline-flex; 
+} 
+#menus section{
+    width: 320px;
+    margin-left:30px;
+    margin-right:30px ; 
+}
+.contenu {
+    width: 320px;
+} 
+}
+@media (min-width: 991px) {
+	.bloc-1 { 
+		display: inline-flex; }
+	.bloc-2 { 
+		display: inline-flex; 
+} 
+#menus section{
+    width: 350px;
+    margin-left:50px;
+    margin-right:50px ; 
+}
+.contenu {
+    width: 350px;
+} 
+}
