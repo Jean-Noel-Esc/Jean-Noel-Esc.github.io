@@ -1,39 +1,39 @@
 @font-face{ font-family:"Gotu"; 
 
-src : url("Gotu-regular.ttf")
+src : url("Gotu-Regular.ttf")
 }
 @font-face{ font-family:"Devonshire"; 
 
-src : url("Devonshire-regular.ttf")
+src : url("Devonshire-Regular.ttf")
 }
 @font-face{ font-family:"Comic"; 
 
-src : url("ComicNeue-regular.ttf")
+src : url("ComicNeue-Regular.ttf")
 }
 @font-face{ font-family:"Parisienne"; 
 
-src : url("Parisienne-regular.ttf")
+src : url("Parisienne-Regular.ttf")
 }
 @font-face{ font-family:"Kaushan"; 
 
-src : url("KaushanScript-regular.ttf")
+src : url("KaushanScript-Regular.ttf")
 }
 
 @font-face{ font-family:"Croissant"; 
 
-src : url("CroissantOne-regular.ttf")
+src : url("CroissantOne-Regular.ttf")
 }
 @font-face{ font-family:"Kalam"; 
 
-src : url("Kalam-regular.ttf")
+src : url("Kalam-Regular.ttf")
 }
 @font-face{ font-family:"Patrick"; 
 
-src : url("PatrickHand-regular.ttf")
+src : url("PatrickHand-Regular.ttf")
 }
 @font-face{ font-family:"Taviraj"; 
 
-src : url("Taviraj-regular.ttf")
+src : url("Taviraj-Regular.ttf")
 }
 /*PAGE ACCEUIL*/
 body{ 
