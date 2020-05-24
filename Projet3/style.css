@@ -173,12 +173,22 @@ img {
 }
 #menu2 .contenu {
     font-family: "Croissant";
-    color: transparent;
+
     letter-spacing: -0.5px;
+    
+   
+   
+
+
+}
+#menu2 .contenu h2 {
+    color: transparent;
     background-image: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
     background-color: #fff5fe;
-   -webkit-background-clip: text;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
+
 #menu2 .contenu h3{
 	font-family: "Taviraj";
 	color: #c77529;
@@ -188,32 +198,51 @@ img {
 #menu3 .contenu{    
     font-family: "Parisienne";
     font-size: 24px;
-    color: #0431df;
-    background: -o-linear-gradient(left, #0431df 0%, #0887fb 100%);
-    background: linear-gradient(to right, #0431df 0%, #0887fb 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: #fdfefd;
+    
+    
+   
+    
+    
+   
 }
+#menu3 .contenu h2{
+    color: transparent;
+    background-image: linear-gradient(to right, #0431df 0%, #0887fb 100%);
+    background-color: #fff5fe;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 #menu3 .contenu h3{
 	font-family: "Kalam";
 	font-size: larger;
 	letter-spacing: 2px;
+    color: #0431df;
 }
+
 #menu4 .contenu{
     font-family: "Kaushan";
     font-size: 24px;
-    color: #3d9339;
-    background: -o-linear-gradient(left, #3d9339 0%, #c0fd87 100%);
-    background: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-color: #fdfffd;
+    
+    
+    
+    
+    
+   
 }
+#menu4 .contenu h2{
+    color: transparent;
+    background-image: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
+    background-color: #fff5fe;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
 #menu4 .contenu h3{
 	font-family: "Kalam";
 	font-size: larger;
 	letter-spacing: 1px;
+    color: #3d9339;
 }
 /*bouton prochainement et animation*/
 button {
@@ -339,7 +368,7 @@ h3 {
 }
 #menus h2 {
     width: 100%;
-    display: flex;
+
     text-align: center;
 }
 .soustitre { 
