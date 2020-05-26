@@ -186,7 +186,7 @@ img {
     background-image: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
     background-color: #fff5fe;
     -webkit-background-clip: text;
-    background-clip: text;
+    
 }
 
 #menu2 .contenu h3{
@@ -210,7 +210,7 @@ img {
     background-image: linear-gradient(to right, #0431df 0%, #0887fb 100%);
     background-color: #fff5fe;
     -webkit-background-clip: text;
-    background-clip: text;
+    
 }
 
 #menu3 .contenu h3{
@@ -235,7 +235,7 @@ img {
     background-image: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
     background-color: #fff5fe;
     -webkit-background-clip: text;
-    background-clip: text;
+    
 }
 
 #menu4 .contenu h3{
