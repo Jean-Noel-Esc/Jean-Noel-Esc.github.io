@@ -18,7 +18,6 @@ src : url("Parisienne-Regular.ttf")
 
 src : url("KaushanScript-Regular.ttf")
 }
-
 @font-face{ font-family:"Croissant"; 
 
 src : url("CroissantOne-Regular.ttf")
@@ -35,7 +34,7 @@ src : url("PatrickHand-Regular.ttf")
 
 src : url("Taviraj-Regular.ttf")
 }
-/*PAGE ACCEUIL*/
+/*PAGE ACCUEIL*/
 body{ 
     margin: 0;
     height: 100%;
@@ -164,7 +163,7 @@ img {
     margin-top: 0px;
     margin-bottom: auto;
 }
-#menu1 .contenu h3{
+#menu1 .contenu h3 {
 	font-family: "Patrick";
 	color: black;
 	font-size: larger;
@@ -173,72 +172,47 @@ img {
 }
 #menu2 .contenu {
     font-family: "Croissant";
-
     letter-spacing: -0.5px;
-    
-   
-   
-
-
 }
 #menu2 .contenu h2 {
     color: transparent;
     background-image: linear-gradient(to right, #c77529 0%, #8f5bfe 100%);
     background-color: #fff5fe;
-    -webkit-background-clip: text;
-    
+    -webkit-background-clip: text;    
 }
-
-#menu2 .contenu h3{
+#menu2 .contenu h3 {
 	font-family: "Taviraj";
 	color: #c77529;
 	font-size: xx-large;
 	letter-spacing: 3px;
 }
-#menu3 .contenu{    
+#menu3 .contenu {    
     font-family: "Parisienne";
-    font-size: 24px;
-    
-    
-   
-    
-    
-   
+    font-size: 24px;   
 }
-#menu3 .contenu h2{
+#menu3 .contenu h2 {
     color: transparent;
     background-image: linear-gradient(to right, #0431df 0%, #0887fb 100%);
     background-color: #fff5fe;
-    -webkit-background-clip: text;
-    
+    -webkit-background-clip: text;    
 }
-
-#menu3 .contenu h3{
+#menu3 .contenu h3 {
 	font-family: "Kalam";
 	font-size: larger;
 	letter-spacing: 2px;
     color: #0431df;
 }
-
-#menu4 .contenu{
+#menu4 .contenu {
     font-family: "Kaushan";
-    font-size: 24px;
-    
-    
-    
-    
-    
-   
+    font-size: 24px;       
 }
-#menu4 .contenu h2{
+#menu4 .contenu h2 {
     color: transparent;
     background-image: linear-gradient(to right, #3d9339 0%, #c0fd87 100%);
     background-color: #fff5fe;
-    -webkit-background-clip: text;
-    
+    -webkit-background-clip: text;    
 }
-
-#menu4 .contenu h3{
+#menu4 .contenu h3 {
 	font-family: "Kalam";
 	font-size: larger;
 	letter-spacing: 1px;
@@ -263,7 +237,7 @@ button {
     display:inline-block;
     justify-content: center;
 }
-#prochainement{
+#prochainement {
     width: 100%;
     margin: auto;
 }
@@ -328,7 +302,7 @@ section {
     margin: auto;
     margin-bottom: 30%;
 }
-section.menu{
+section.menu {
     margin-left: 5%;
     margin-right: 5%;
     padding : 10%;
@@ -368,7 +342,6 @@ h3 {
 }
 #menus h2 {
     width: 100%;
-
     text-align: center;
 }
 .soustitre { 
@@ -389,7 +362,6 @@ width:100%;
     background-position-y: bottom;
     background-size: 0px 1px;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
@@ -401,14 +373,12 @@ width:100%;
     background-position-y: bottom;
     background-size: 100% 1px;
     background-repeat: no-repeat;
-    background-repeat: no-repeat;
     background-attachment: initial;
     background-origin: initial;
     background-clip: initial;
     background-color: initial;
     transition: all 0.5s;
 }
-
 /*ELEMENT SPECIFIQUE A CHAQUE MENU*/
 /*MENU1*/
 #menu1 section.menu, #menus #menu1{
@@ -451,8 +421,6 @@ width:100%;
 #menu1 .assiette-la-note-enchantee {
 	font-family: "Kalam";
 }
-
-
 /*MENU2*/
 #menu2 section.menu,  #menus #menu2 {
     background-color: #fce9fa;
@@ -505,10 +473,10 @@ width:100%;
 	border: none; 
 }
 /*MENU3*/
-#menu3 section.menu,  #menus #menu3{
+#menu3 section.menu,  #menus #menu3 {
     background-color: #c7c7c7;
 }
-#menu3 .soustitre{
+#menu3 .soustitre {
 	font-family: "Kalam";
 }
 .nom_restaurant-titre-le-delice-des-papilles {
@@ -552,7 +520,7 @@ width:100%;
 	font-family: "kalam";
 }
 /*MENU4*/
-#menu4 section.menu,  #menus #menu4{
+#menu4 section.menu,  #menus #menu4 {
     background-color: #f6f5f5;
 }
 .nom_restaurant-titre-la-palette-du-gout {
@@ -584,9 +552,7 @@ width:100%;
 #menu4 .soustitre {
     font-family: "Kalam";
 }
-
 /*responsive*/
-
 @media (min-width: 768px) {
 	.bloc-1 { 
 		display: inline-flex; }
