@@ -7,9 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-.social button {
-    padding: 48Px 48px;
-}
+
 
 a,
 button {
@@ -299,6 +297,8 @@ blockquote footer{
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #bloc-1-hero h1 {
@@ -721,6 +721,7 @@ p {
     max-width: 400px;
     margin: auto auto auto auto;
 }
+
 
 h2 {
     font-size: 22px;
