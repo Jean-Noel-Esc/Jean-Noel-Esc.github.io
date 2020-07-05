@@ -744,6 +744,12 @@ h4 {
     color: #333333!important;
 }
 
+h5 { 
+    font-size: 20px;
+    font-weight: 600;
+    color: white!important; 
+}
+
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
