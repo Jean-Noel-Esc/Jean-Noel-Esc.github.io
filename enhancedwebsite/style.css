@@ -7,6 +7,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.social button {
+    padding: 48Px 48px;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
