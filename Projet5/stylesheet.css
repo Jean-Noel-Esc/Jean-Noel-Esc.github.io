@@ -45,3 +45,40 @@ button {
 
   button :hover {
     cursor: pointer; }
+
+    
+.topbar {
+  background-color: #F3E9F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem 2rem 2rem;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline; }
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #F3E9F1; }
+
+table {
+  margin: auto;
+  border: none;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, th {
+  border: 1px solid #bebebe;
+  padding: 10px 20px; }
+
+th {
+  background-color: #ebebeb; }
+
+td {
+  text-align: center; }
