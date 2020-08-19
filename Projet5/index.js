@@ -1,44 +1,35 @@
-
-//L'utilisateur à besoin d'un panier dans le localStorage de son navigateur
-
-
-
-//Appel de l'API/
-const APIURL = "http://localhost:3000/api/teddies";
-
-var request = XMLhttpRequest();
-request.open("GET", "http://localhost:3000/api/teddies");
-request.send();
-
-Produits = () =>{
-	return new Promise((resolve) =>{
-		let request = new XMLHttpRequest();
-		request.onreadystatechange = function() {
-			if(this.readyState == XMLHttpRequest.DONE && this.status == 200) 
+var request = new XMLHttpRequest();
+var produits;
+window.onload=function(){ 
+request.onreadystatechange = function() {
+			if(this.status == 200 && this.readyState==XMLHttpRequest.DONE) 
 			{
-				resolve(JSON.parse(this.responseText));
-				console.log("Administration : connection ok");
-			}else{
+				produits = JSON.parse(this.responseText);
+				console.log(produits);
+				insertproduct(produits);
+			}else {
+				console.log(this.status);
 				console.log("Administration : ERROR connection API");
 			}
-		}
-		request.open("GET", APIURL + idProduit);
-		request.send();
-	});
-};
+		}	
+request.open("GET", "Http://localhost:3000/api/teddies");
+request.send();
+ }
 
+let teddies = document.getElementById('produits');
 
-// affichage de la page des produits dans le tableau HTML après appel de l'API 
+function insertproduct(produits){ 
+for ( let i=0 ; i<produits.length ; i++){
+	teddies.innerHTML+= '<div class="card" id="product_box">'+
+                    '<img class="card-img-top" src="'+produits[i].imageUrl+'" alt="product_img">'+
+                '<div class="card-body">'+
+                    '<h5 class="card-title" id="product_name">'+produits[i].name+'</h5>'+
+                    '<p class="card-text" id="product_description">Ours en peluche</p>'+
+                
+                   
+                        '<p class="card-text" id="product_description">Prix:'+produits[i].price+'</p>'+
 
-
-
-
-//affichage de la liste des produits
-
-
-
-//affichage de la page du produit selectionné
-
-
-// ajout du ou des produits au panier 
-
+                    '<a href="ficheproduit.html?id='+produits[i]._id+'" class="btn btn-primary">Voir</a>'+
+                '</div>'+
+            '</div>';
+} }

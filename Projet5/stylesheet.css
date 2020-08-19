@@ -1,19 +1,22 @@
 html {
   background-color: #fbd3fc;
-  color: white;  }
+  color: white;  
+}
 
 body {
   width: 100%;
   margin: auto;
   font-family: 'helvetica';
-  background-color: #fbd3fc; }
+  background-color: #fbd3fc; 
+}
 
 header {
   text-align: center;
   padding: 1%;
   background-color: #fd8aff;
   font-family: 'helvetica';
-  font-size: 2rem; }
+  font-size: 2rem; 
+}
 
 .fa-shopping-cart{ 
 color: #fbd3fc ; 
@@ -27,11 +30,8 @@ nav {
   margin-top: 2%; 
 }
 
-.btn {  
-  margin: auto;
-  display: block;
-}
-button {
+
+.btn {
   display: block;
   align-content: center;
   border: 2px solid white;
@@ -43,15 +43,7 @@ button {
   background-color: rgb(255, 0, 166);
   color:white;
 }
-button :hover {
-    cursor: pointer;}
-button a {
-    text-decoration: none;
-    color: white;
-    display: block;
-    margin: auto; }
-button :hover {
-    cursor: pointer; }
+
 
 
 
@@ -60,29 +52,10 @@ footer {
   display: block;
   text-align: center;
   padding: 1.5rem;
-  background-color: #F3E9F1; }
-
-.tableau{
-  margin-top: 50px;
-  margin-bottom: 25px; 
+  background-color: #F3E9F1; 
 }
-table {
-  margin: auto;
-  border: none;
-  letter-spacing: 1px;
-  font-size: 0.8rem;
-  border-collapse: collapse;
-  border-spacing: 0; }
 
-td, th {
-  border: 5px solid #bebebe;
-  padding: 30px 40px; }
 
-th {
-  background-color: #ebebeb; }
-
-td {
-  text-align: center; }
 
 .basket{
   font-size: 50px;
