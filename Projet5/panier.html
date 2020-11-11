@@ -11,80 +11,53 @@
 
 <body class="container">
     <header class="topbar"><h1><span><i class="fas fa-shopping-cart"></i></span>ORINOCO</h1>
-            <nav class="nav topbar">
-                <a href="index.html" class="acceuil">Accueil</a>
-                <a href="panier.html" class="basket"><i class="fas fa-shopping-basket"></i>Panier</a>
-            </nav>
+        <nav class="nav topbar">
+            <a href="index.html" class="acceuil">Accueil</a>
+            <a href="panier.html" class="basket"><i class="fas fa-shopping-basket"></i>Panier</a>
+        </nav>
     </header>
         <main id="main">
             <div id="Produits">
-
             </div>
 
-            <div id="basket"><div> <!--Votre panier est vide--> </div></div>
-            <div>Le montant total de votre commande est de :<span id="total"> 0</span>€</div>
+            <div id="basket"><div></div></div>
+            <div>Le montant total de votre commande est de :<span id="total"> </span>€</div>
 
             <form id="formulaire">
-      <div class="form-row">
-        <div class="form-group col-md-5">
-            <label for="firstname">Prénom :</label>
-            <input type="text" name="firstName" class="form-control" id="firstName" placeholder="Votre prénom..." required=""><span id="oublisPrenom"></span><br>
-        </div>
-        <div class="form-group col-md-5">
-            <label for="name">Nom :</label>
-            <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Votre nom..." required=""><span id="oublisNom"></span><br>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="form-group col-md-5">
-            <label for="email">Email :</label>
-            <input type="email" class="form-control" id="email" placeholder="Votre email@email.fr" required=""><span id="oublisEmail"></span><br>
-        </div>
-        <div class="form-group col-md-5">
-            <label for="address">Adresse :</label>
-            <input type="text" name="address" class="form-control" id="address" placeholder="Votre Adresse..." required=""><span id="oublisAddress"></span><br>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="form-group col-md-5">
-            <label for="city">Ville :</label>
-            <input type="text" name="city" class="form-control" id="city" placeholder="Votre ville..." required=""><span id="oublisVille"></span><br>
-        </div>
-    </div>
-      <button type="submit" id="valider">Passer la commande</button>
-        <div class="msg" id="message"> </div>
-    </form>
-
-    <!-- Modal -->
-    <!--    
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
-            </div>
-          </div>
-        </div>
-    -->
-
-
-
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="firstname">Prénom :</label>
+                        <input type="text" name="firstName" class="form-control" id="firstName" placeholder="Votre prénom..." required=""><span id="oublisPrenom"></span><br>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="name">Nom :</label>
+                        <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Votre nom..." required=""><span id="oublisNom"></span><br>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="email">Email :</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email@email.fr" required=""><span id="oublisEmail"></span><br>
+                    </div>
+                    <div class="form-group col-md-5">
+                        <label for="address">Adresse :</label>
+                        <input type="text" name="address" class="form-control" id="address" placeholder="Votre Adresse..." required=""><span id="oublisAddress"></span><br>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-5">
+                        <label for="city">Ville :</label>
+                        <input type="text" name="city" class="form-control" id="city" placeholder="Votre ville..." required=""><span id="oublisVille"></span><br>
+                    </div>
+                </div>
+                <button type="submit" id="valider">Passer la commande</button>
+                <div class="msg" id="message"> </div>
+            </form>
         </main>
     <footer>
         <p>ORINOCO<p>
     </footer>
     <script src="https://use.fontawesome.com/0b3f51b4d2.js"></script>
-    <script src="panier2.js"></script>
+    <script src="panier3.js"></script>
 </body>
 </html>

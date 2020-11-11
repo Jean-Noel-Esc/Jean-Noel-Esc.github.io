@@ -2,7 +2,6 @@ html {
   background-color: #fbd3fc;
   color: white;  
 }
-
 body {
   width: 100%;
   margin: auto;
@@ -11,43 +10,44 @@ body {
 }
 
 header {
+  align-items: center;
   text-align: center;
   padding: 1%;
   background-color: #fd8aff;
   font-family: 'helvetica';
-  font-size: 2rem; 
+  font-size: 2rem;
+  color:rgb(255, 0, 166); 
 }
-
+nav {
+  text-align: center;
+}
 .fa-shopping-cart{ 
 color: #fbd3fc ; 
 }
-
-
-
 nav {
   text-align: center;
   margin-bottom: 2%;
   margin-top: 2%; 
 }
 
+.card{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 .btn {
   display: block;
+  align-items: center;
   align-content: center;
   border: 2px solid white;
   border-radius: 20px;
   margin: 2%;
   width: 180px;
   height: 60px;
-  font-size: 1.3em;
+  font-size: 1em;
   background-color: rgb(255, 0, 166);
   color:white;
 }
-
-
-
-
-
 footer {
   display: block;
   text-align: center;
@@ -55,15 +55,25 @@ footer {
   background-color: #F3E9F1; 
 }
 
-
-
-.basket{
-  font-size: 50px;
+.basket {
+  font-size: 40px;
   color:#fbd3fc;
   text-decoration: none;
 }
+a.basket:hover  {
+ color: rgb(255, 0, 166);
+ text-decoration: none; 
+ font-size: 50px;
+}
 .acceuil{
-  font-size: 50px;
+  font-size: 40px;
   color:#fbd3fc;
   text-decoration: none;
+}
+
+#valider {
+  width: 200px;
+  margin-left: auto; 
+  margin-right: auto;
+  margin-bottom: 20px;
 }

@@ -1,35 +1,44 @@
-var request = new XMLHttpRequest();
-var produits;
-window.onload=function(){ 
-request.onreadystatechange = function() {
-			if(this.status == 200 && this.readyState==XMLHttpRequest.DONE) 
-			{
-				produits = JSON.parse(this.responseText);
-				console.log(produits);
-				insertproduct(produits);
-			}else {
-				console.log(this.status);
-				console.log("Administration : ERROR connection API");
-			}
-		}	
-request.open("GET", "Http://localhost:3000/api/teddies");
-request.send();
- }
+var request = new XMLHttpRequest(); //qui contient notre nouvelle requete.
+var produits; // qui contiendra la reponse JSON parse.
 
+// Recuperation des informations de l'API + appel callApi 
+var urlApi =  "Http://localhost:3000/api/teddies";
+window.onload = callApi(urlApi); 
+
+// Declaration de la fct pour l'appel de l'api.
+// callApi @param {string}
+//  Appel insertproduct @param [array]
+function callApi(url){ 
+	request.onreadystatechange = function() {
+		if(this.status == 200 && this.readyState==XMLHttpRequest.DONE) {
+			produits = JSON.parse(this.responseText);
+			insertproduct(produits);
+		} else {
+			console.log(this.status);
+			console.log("Administration : ERROR connection API");
+		}
+	}	
+	request.open("GET", url);
+	request.send();
+}
+
+// Initialisation de la variable teddies pour cibler l'element "produits" dans la page html.
 let teddies = document.getElementById('produits');
 
+// Declaration de la fonction insertproduct qui injecte les infos produits dans l'html avec une card bootstrap.
+// insertproduct @param {array}
 function insertproduct(produits){ 
-for ( let i=0 ; i<produits.length ; i++){
-	teddies.innerHTML+= '<div class="card" id="product_box">'+
-                    '<img class="card-img-top" src="'+produits[i].imageUrl+'" alt="product_img">'+
-                '<div class="card-body">'+
-                    '<h5 class="card-title" id="product_name">'+produits[i].name+'</h5>'+
-                    '<p class="card-text" id="product_description">Ours en peluche</p>'+
-                
-                   
-                        '<p class="card-text" id="product_description">Prix:'+produits[i].price+'</p>'+
+	for ( let i=0 ; i<produits.length ; i++){
+		teddies.innerHTML+= 
+		'<div class="card" id="product_box">'+
+		'<img class="card-img-top" src="'+produits[i].imageUrl+'" alt="product_img">'+
+		'<div class="card-body">'+
+		'<h5 class="card-title" id="product_name">'+produits[i].name+'</h5>'+
+		'<p class="card-text" id="product_description">Ours en peluche</p>'+
+		'<p class="card-text" id="product_description">Prix:'+produits[i].price+'</p>'+
+		'<a href="ficheproduit.html?id='+produits[i]._id+'" class="btn btn-primary">Voir</a>'+
+		'</div>'+
+		'</div>';
+	} 
+}
 
-                    '<a href="ficheproduit.html?id='+produits[i]._id+'" class="btn btn-primary">Voir</a>'+
-                '</div>'+
-            '</div>';
-} }
