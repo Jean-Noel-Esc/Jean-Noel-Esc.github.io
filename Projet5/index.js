@@ -1,32 +1,30 @@
-var request = new XMLHttpRequest(); //qui contient notre nouvelle requete.
-var produits; // qui contiendra la reponse JSON parse.
+var request = new XMLHttpRequest(); // Qui contient notre nouvelle requëte.
+var produits; // Qui contiendra la reponse JSON parse.
 
-// Recuperation des informations de l'API + appel callApi 
+// Récupération des informations de l'API + appel callApi. 
 var urlApi =  "Http://localhost:3000/api/teddies";
 window.onload = callApi(urlApi); 
 
-// Declaration de la fct pour l'appel de l'api.
-// callApi @param {string}
-//  Appel insertproduct @param [array]
+// Déclaration de la fonction callApi pour l'appel de l'api.
+// callApi @param {string}.
+// Appel insertproduct @param [array].
 function callApi(url){ 
 	request.onreadystatechange = function() {
 		if(this.status == 200 && this.readyState==XMLHttpRequest.DONE) {
 			produits = JSON.parse(this.responseText);
 			insertproduct(produits);
-		} else {
-			console.log(this.status);
-			console.log("Administration : ERROR connection API");
-		}
+		} 
 	}	
 	request.open("GET", url);
 	request.send();
 }
 
-// Initialisation de la variable teddies pour cibler l'element "produits" dans la page html.
+// Initialisation de la variable teddies pour cibler l'élément "produits" dans la page html.
 let teddies = document.getElementById('produits');
 
-// Declaration de la fonction insertproduct qui injecte les infos produits dans l'html avec une card bootstrap.
-// insertproduct @param {array}
+// Déclaration de la fonction insertproduct qui injecte les infos produits dans l'html avec une card bootstrap.
+// Insert bouton avec lien ?id=
+// insertproduct @param {array}.
 function insertproduct(produits){ 
 	for ( let i=0 ; i<produits.length ; i++){
 		teddies.innerHTML+= 

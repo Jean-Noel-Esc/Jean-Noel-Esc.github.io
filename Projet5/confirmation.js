@@ -1,4 +1,5 @@
-// Affichage orderId et montant total de la commande
+// Affichage orderId et montant total de la commande au chargement de la page.
+// Clear du local storage.
 window.onload = confirm ();
 function confirm () {
 	var element = document.getElementById ("confirm");

@@ -1,10 +1,10 @@
 let apiurl = "http://localhost:3000/api/teddies/";//Url de l'api relative aux infos produits.
 let params = new URLSearchParams(document.location.search);// Nouveau paramètre d'url.
-let id = params.get("id");// Parametre id de l'url 
-let teddy;// Qui contiendra la reponse de la requete.(fetch(apiurl+i))
+let id = params.get("id");// Paramètre id de l'url. 
+let teddy;// Qui contiendra la réponse de la requete.(fetch(apiurl+i))
 
-// Requete api + id; Appel de la fonction affichageproduit; Initialisation de la variable teddy.
-// Promesse : reponse json.
+// Requete api + id; Promesse : reponse json.
+// Appel de la fonction affichageproduit; Initialisation de la variable teddy.
 window.onload = callApiId(id);
 function callApiId(i){
 	fetch(apiurl + i)
@@ -39,8 +39,9 @@ function affichageProduit(produit) {
 	});
 	ecouteClick();
 }
-// Declaration de la fonction ecouteclick qui permet a l'utilisateur de placer le produit dans le panier
-// Creation du panier dans le local storage; push des infos produit dans le panier.
+// Déclaration de la fonction ecouteclick qui permet à l'utilisateur de placer le produit dans le panier.
+// Création du panier dans le local storage; push des infos produit dans le panier.
+// Set de l'item panier dans le local storage.
 // Retour message "alert" qui informe l'utilisateur qu'il a ajouté un produit au panier.
 function ecouteClick() {
 	document.getElementById("btn").addEventListener("click",() => {

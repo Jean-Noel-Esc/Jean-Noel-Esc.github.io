@@ -8,11 +8,13 @@ var afficheTotal = document.getElementById("total"); // Cible l'element total da
 const checkMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; // Regex pour l'email client.
 const checkAddress = /^[0-9a-zA-Z\s]+$/; // Regex pour l'adresse du client.
 const checkText = /^[a-zA-Z\s]+$/; // Regex pour les informations textuelles.
-
+// Au chargement appel de la fonction panier.
 window.onload = panier(paniers);
 // panier @param {array}.
 // Creation array si le panier est vide.
-// Sinon parcours du tableau pour affichage infos. 
+// Sinon parcours du tableau pour affichage infos : 
+// Incrémentation de var=total par le montant.
+// Push dans var product=[] de l'id.
 // Insert infos dans l'html.
 // et set du total dans l'html et le local storage.
 function panier(p){
@@ -37,7 +39,7 @@ function panier(p){
 	}
 }
 // checkInput @param : (text, type).
-// Verification conformité regex
+// Vérification conformité regex
 function checkInput(text,type) {
 	if (type == "mail" && !checkMail.test(text)){
 		return false;
@@ -49,8 +51,8 @@ function checkInput(text,type) {
 		return true;}
 	}
 
-// Au click appel checkInput 
-// Si retour false : message erreur
+// Au click appel checkInput .
+// Si retour false : message erreur.
 // Si retour true : creation objet contact et appel de la fonction sendOrder @param string (contact, products).
 document.getElementById("formulaire").addEventListener("submit", (e) => { 
 	event.preventDefault();  
@@ -89,7 +91,7 @@ document.getElementById("formulaire").addEventListener("submit", (e) => {
 });
 
 // sendOrder envoi contact et products vers l'api.
-// retour : json orderId 
+// Retour : json orderId 
 function sendOrder(c,p) {
 	const objectToSend = {
 		contact, products
