@@ -24,13 +24,13 @@ function panier(p){
 	}else{
 		for( var i=p.length-1; i>=0; i--){
 			total+= p[i].price;
-			products.push(paniers[i].id) 
+			products.push(p[i].id) 
 			listProduit.innerHTML+= '<div class="card" id="product_box">'+
-			'<img class="card-img-top" src="'+paniers[i].imageUrl+'" alt="product_img">'+
+			'<img class="card-img-top" src="'+p[i].imageUrl+'" alt="product_img">'+
 			'<div class="card-body">'+
-			'<h5 class="card-title" id="product_name">'+paniers[i].name+'</h5>'+
+			'<h5 class="card-title" id="product_name">'+p[i].name+'</h5>'+
 			'<p class="card-text" id="product_description">Ours en peluche</p>'+
-			'<p class="card-text" id="product_description">Prix:'+paniers[i].price+'</p>'+
+			'<p class="card-text" id="product_description">Prix:'+p[i].price+'</p>'+
 			'</div>'+
 			'</div>';
 		}
