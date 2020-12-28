@@ -25,7 +25,7 @@ let teddies = document.getElementById('produits');
 // Déclaration de la fonction insertproduct qui injecte les infos produits dans l'html avec une card bootstrap.
 // Insert bouton avec lien ?id=
 // insertproduct @param {array}.
-function insertproduct(produits){
+function insertproduct(produits){ 
 	for ( let i=0 ; i<produits.length ; i++){
 		teddies.innerHTML+= 
 		'<div class="card" id="product_box">'+
